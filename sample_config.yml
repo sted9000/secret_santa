@@ -1,0 +1,23 @@
+participants:
+  alice:
+    email: example@email.com
+    partner: bob
+  bob:
+    email: example@email.com
+    partner: alice
+  charlie:
+    email: example@email.com
+    partner: null
+  dave:
+    email: example@email.com
+    partner: null
+previous_matches:
+  alice:
+  - charlie
+  bob:
+  - null
+  charlie:
+  - alice
+  dave:
+  - null
+
