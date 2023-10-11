@@ -60,11 +60,11 @@ def email_santas(secret_santa):
 
         # format email
         message = Mail(
-            from_email=participants[santa]['email'],
-            to_emails=participants[recipient]['email'],
+            from_email=os.environ.get('SENDGRID_EMAIL'),
+            to_emails=participants[santa]['email'],
             subject='Secret Santa Assignments',
             plain_text_content=f'{santa.capitalize()} you are the secret santa of {recipient.capitalize()}. Gifts are '
-                               f'to be used, handmade, recycled, or re-gifts. No gifts for or gifting of children :)'
+                               f'to be used, handmade, recycled, or re-gifts. No gifts for or gifting of children :) '
         )
 
         # send email

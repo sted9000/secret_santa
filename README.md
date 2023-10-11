@@ -1,9 +1,10 @@
-# Contactless Secret Santa Python Email
-Solves: How to organize a Secret Santa via email without the organizer knowing who everyone has.
+# Secret Santa Generator
+A quick and simple secret santa generator with a few extra features.
+- Organize without the organizer knowing who has who
+- Avoid couples having each other
+- Avoid people having the same person as last year
 
-## Small Twist
-Each member of a couple is a Santa (and individuals of a couple can't have one another).
-
-## Resources / Credit
-- [Main script](https://medium.com/analytics-vidhya/i-made-a-contactless-secret-santa-algorithm-with-python-7374d4a79c56)
-- [Send gmail emails with python](https://www.geeksforgeeks.org/send-mail-gmail-account-using-python/)
+# Usage
+1. Create a config.yml file (see sample_config.yml)
+1. Place sendgrid api and sender email in .env file
+1. Run `python3 secret_santa.py`
