@@ -5,12 +5,9 @@ import os
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
 
-# set variables
-config_path = 'config.yml'
-
 # load config
 load_dotenv()
-config = yaml.safe_load(open(config_path))
+config = yaml.safe_load(open('config.yml'))
 participants, previous_matches = config['participants'], config['previous_matches']
 names = list(participants.keys())
 
